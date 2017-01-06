@@ -1,0 +1,70 @@
+mixin box-article-main(options)
+  - category = options.category || 'No category';
+  - type = options.type || 'default';
+  - heading = options.heading || 'No title';
+  - description = options.description || 'default';
+  - img = options.img || '';
+  - like =  options.like || '5';
+  - comment = options.comment || '10';
+  - time = options.time || '2 hours ago';
+  - author = options.author || 'No author';
+  - buttonFirst = options.buttonFirst || 'Read More';
+  - buttonSecond = options.buttonSecond || 'Start slideshow';
+
+
+  .box
+    .article-text
+      if category == 'Cars & Moto'
+        .article-badge
+          a(href='#')= category
+
+        .article-img
+          a(href='#')
+            img.img-responsive(src='/' width='#' height='#' alt='Alternative text')
+
+            .article-body
+              h1
+                a(href='#')= heading
+              p= description
+
+        .article-footer
+          ul
+            li
+              i.fa.fa-heart-o(aria-hidden='true')= like
+            li
+              i.fa.fa-comment-o(aria-hidden='true')= comment
+            li
+              i.fa.fa-clock-o(aria-hidden='true')= time
+
+
+      else if category == 'Style'
+        .article-badge
+          a(href='#')= category
+
+        .article-img
+          a(href='#')
+            img.img-responsive(src='#', alt='Alternative text', width='#', height='#')
+
+
+        .article-body
+          h1
+            a(href='#')= heading
+          p= description
+
+        .article-footer
+          ul
+            .btn-group(role='group')
+              button.btn.btn-default(type='button')= buttonFirst
+              button.btn.btn-default(type='button')= buttonSecond
+
+      else
+        .article-body
+          h1
+          a(href='#')
+
+
+
+
+
+
+

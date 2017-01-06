@@ -1,0 +1,59 @@
+extends ../base/layout.jade
+
+block main
+
+  .grid.grid-section-slider
+    .grid
+      .grid__cell(class='4/4')
+        include ../includes/slider-component.pug
+
+  .grid.grid-section-article
+    .grid__cell(class='3/4')
+      .grid
+        .grid_cell(class='1/2')
+          include ../includes/box-article-main-cars.pug
+        .grid_cell(class='1/2')
+        .grid_cell(class='1/3')
+          include ../includes/box-article-style.pug
+        .grid_cell(class='1/3')
+          include ../includes/box-article-travel-sea.pug
+        .grid_cell(class='1/3')
+          include ../includes/box-article-culture.pug
+
+  .grid.grid-section-news
+    .grid__cell(class='1/4')
+      .grid
+        .grid__cell(class='4/4')
+          include ../includes/news-category.pug
+        .grid__cell(class='4/4')
+          include ../includes/news-exclusive.pug
+        .grid__cell(class='4/4')
+          include ../includes/news-post.pug
+        .grid__cell(class='4/4')
+          include ../includes/news-apple.pug
+        .grid__cell(class='4/4')
+          include ../includes/news-siri.pug
+        .grid__cell(class='4/4')
+           include ../includes/news-finale.pug
+        .grid__cell(class='4/4')
+           include ../includes/news-button.pug
+
+  .grid.grid-section-article
+    .grid
+      .grid__cell(class='2/4')
+        include ../includes/box-article-main-style.pug
+      .grid__cell(class='1/4')
+        include ../includes/box-article-travel-house.pug
+      .grid__cell(class='1/4')
+       include ../includes/box-article-travel-alleyway.pug
+
+  .grid.grid-section-video
+    .grid
+      .grid__cell(class='1/4')
+        include ../includes/video-black.pug
+      .grid__cell(class='1/4')
+        include ../includes/video-behind.pug
+      .grid__cell(class='1/4')
+        include ../includes/video-french.pug
+      .grid__cell(class='1/4')
+        include ../includes/video-smartwatch.pug

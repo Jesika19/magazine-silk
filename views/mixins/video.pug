@@ -1,0 +1,62 @@
+mixin video(options)
+  - name = options.name || 'Unknown';
+  - description = options.description || 'Unknown';
+  - duration = options.duration || 'Unknown';
+  - category = options.category || 'Default';
+
+  .description
+    .article-badge
+      a(href='#')= category
+
+  .name-video
+    if name == 'The Big Black Book Spring'
+      h1= description
+
+    else if name == 'Behind The Scenes Video'
+      h1= description
+
+    else if name == 'Michelin-starred French'
+      h1= description
+
+    else if name == 'The Smartwatch Wars'
+      h1= description
+
+    else
+      h1
+
+  .video
+    if name == 'The Big Black Book Spring'
+      video(width='#', height='#', controls='#')
+      source(src='The Big Black Book Spring', type='#')
+
+    else if name == 'Behind The Scenes Video'
+      video(width='#', height='#', controls='#')
+      source(src='Behind The Scenes Video', type='#')
+
+    else if name == 'Michelin-starred French'
+      video(width='#', height='#', controls='#')
+      source(src='Michelin-starred French', type='#')
+
+    else if name == 'The Smartwatch Wars'
+      video(width='#', height='#', controls='#')
+      source(src='The Smartwatch Wars', type='#')
+
+    else
+      video(width='#', height='#', controls='#')
+      source(src='#', type='#')
+
+  .duration-video
+    if name == 'The Big Black Book Spring'
+      p= duration
+
+    else if name == 'Behind The Scenes Video'
+      p= duration
+
+    else if name == 'Michelin-starred French'
+      p= duration
+
+    else if name == 'The Smartwatch Wars'
+      p= duration
+
+    else
+      p

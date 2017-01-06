@@ -1,0 +1,29 @@
+mixin box-article-style(options)
+  - category = options.category || 'No category';
+  - description = options.description || 'No description';
+  - buttonName = options.buttonName || 'View';
+
+  .box
+    .article-style
+      .img-badge
+        a(href='#')= category
+        .img-body
+          a(href='#')
+            img.img-responsive(src='#', alt='Style Photo',width='#',height='#')
+
+      .img-containt.text-left
+        if category == 'Style'
+          .article-head
+            h1
+              a(href='#')= description
+
+          .article-footer
+            a.btn.btn-secondary.btn-bordered(href='#')= buttonName
+
+        else
+          .article-head
+            h1
+              a(href='#')
+
+      .article-footer
+        a.btn.btn-secondary.btn-bordered(href='#')

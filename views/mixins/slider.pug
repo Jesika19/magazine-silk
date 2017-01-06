@@ -1,0 +1,31 @@
+mixin slider(options)
+  - category = options.category || 'default';
+  - type = options.type ||  'default';
+  - title = options.title || 'No title';
+  - description = options.description || 'No description';
+  - buttonName = options.buttonName || 'No button name';
+
+  .slider
+    .article-badge
+      if category == 'Food & Drink'
+        if type == 'hella'
+          .carousel-title
+            h1= title
+
+          .carousel-details
+            p= description
+
+          .carousel-footer
+            a.btn.btn-primary.btn-bordered(href='#')= buttonName
+
+        else
+          .carousel-title
+            h1
+          .carousel-details
+            p
+
+          .carousel-footer
+            a.btn.btn-primary.btn-bordered(href='#')
+
+      else
+       h1

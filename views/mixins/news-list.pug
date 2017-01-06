@@ -1,0 +1,52 @@
+mixin news-list(options)
+  - category = options.category || 'No category';
+  - type = options.type || 'Unknown';
+  - description = options.description || 'No description';
+  - time = options.time || 'Unknown';
+  - buttonName = options.buttonName || 'Unknown';
+
+.box
+  .article-style
+    .article-badge
+      a(href='#')= category
+    .article-img
+      a(href='#')
+        img.img-responsive(src='#', alt='News Photo',width='#',height='#')
+
+    .article-text
+      if category == 'news'
+        .article-head
+          if type ==  'exclusive'
+            p= time
+            h1
+              a(href='#')= description
+
+          else if type == 'post'
+            p= time
+            h1
+              a(href='#')= description
+
+          else if type == 'apple'
+            p= time
+            h1
+              a(href='#')= description
+
+
+          else if type == 'siri'
+            p= time
+            h1
+              a(href='#')= description
+
+
+          else if type == 'finale'
+            p= time
+            h1
+              a(href='#')= description
+
+          else
+            h1
+              a(href='#')
+
+  .article-footer
+    a.btn.btn-secondary.btn-bordered(href='#')= buttonName
+

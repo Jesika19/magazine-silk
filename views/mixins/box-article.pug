@@ -1,0 +1,130 @@
+mixin box-article(options)
+  - category = options.category || 'no category';
+  - type = options.type || 'default';
+  - heading = options.heading || 'No heading';
+  - description = options.description || 'default';
+  - img = options.img || '';
+  - like =  options.like || '5';
+  - comment = options.comment || '10';
+  - time = options.time || '2 hours ago';
+  - author = options.author || 'No author';
+
+  .box
+    .main-layout
+      .article-badge
+        a(href='#')= category
+
+      .article-details
+        if category == 'Travel'
+          if type == 'Sea'
+            .article-img
+              a(href='#')
+                img.img-responsive(src= img,alt= type ,width='#',height='#')
+
+              .article-body
+                .article-title
+                  h1
+                    a(href='#')= heading
+
+              .article-description
+                  p= description
+
+              .article-footer
+                ul
+                  li
+                    i.fa.fa-heart-o(aria-hidden='true')= like
+                  li
+                    i.fa.fa-comment-o(aria-hidden='true')= comment
+                  li
+                    i.fa.fa-clock-o(aria-hidden='true')= time
+
+
+          else if type == 'House'
+            .article-img
+              a(href='#')
+
+            .article-body
+              h1
+                a(href='#')= heading
+                p= description
+
+            .article-footer
+              ul
+                li
+                  i.fa.fa-heart-o(aria-hidden='true')= like
+                li
+                  i.fa.fa-comment-o(aria-hidden='true')= comment
+                li
+                  i.fa.fa-clock-o(aria-hidden='true')= time
+
+          else if type == 'Alleyway'
+            .article-img
+              a(href='#')
+                img.img-responsive(src= img ,alt= type ,width='#',height='#')
+            .article-body
+              h1
+                a(href='#')= heading
+                p= description
+            .article-footer
+              ul
+                li
+                  i.fa.fa-heart-o(aria-hidden='true')= like
+                li
+                  i.fa.fa-comment-o(aria-hidden='true')= comment
+                li
+                  i.fa.fa-clock-o(aria-hidden='true')= time
+
+
+          else
+            .article-img
+              a(href='#')
+                img.img-responsive(src= img ,alt= type ,width='#',height='#')
+
+            .article-body
+              h1
+                a(href='#')= heading
+                  p= description
+
+            .article-footer
+              ul
+                li
+                  i.fa.fa-heart-o(aria-hidden='true')= like
+                li
+                  i.fa.fa-comment-o(aria-hidden='true')= comment
+                li
+                  i.fa.fa-clock-o(aria-hidden='true')= time
+
+
+
+        else if category == 'Culture'
+          if type == 'Balloon'
+            .article-img
+              a(href='#')
+              img.img-responsive(src= img,alt= type ,width='#',height='#')
+
+            .article-body
+              h1
+                a(href='#')= heading
+                p= description
+
+            .article-footer
+              ul
+                li
+                  p
+                    a(href='#')= author
+                li
+                  img.img-circle(src= '#',alt= 'Author',width='#',height='#')
+
+                li
+                  i.fa.fa-clock-o(aria-hidden='true')= time
+
+
+        else
+          .article-img
+            a(href='#')
+            img.img-responsive(src= img,alt= type,width='#',height='#')
+
+          .article-body
+            h1
+              a(href='#')= heading
+              p= description
