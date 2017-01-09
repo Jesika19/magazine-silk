@@ -3,16 +3,16 @@
 //Variables
 .box {
     background-color: $color-white;
-    width: 370px;
-    height: ;
+    width: 370 px;
+    height: 342 px;
 }
 
 .article-badge {
     font-size: 12 px;
     font-family: $font-main;
     color: $color-yellow;
-    width: 32px;
-    height: 103px;
+    width: 32 px;
+    height: 103 px;
 }
 
 .article-img {
@@ -24,8 +24,8 @@
     font-size: 32 px;
     font-family: $font-title;
     color: $color-yellow;
-    width: 32px;
-    height: 103px;
+    width: 32 px;
+    height: 103 px;
 }
 
 .article-body-description {
@@ -33,6 +33,25 @@
     font-size: 32 px;
     font-family: $font-secondary;
     color: $color-black;
-    width: 32px;
-    height: 103px;
+    width: 32 px;
+    height: 103 px;
+}
+
+.article-footer-cars {
+    font-family: $font-main;
+    color: $color-grey;
+    font-size: 15 px;
+}
+
+.article-footer-cars {
+    font-family: $font-main;
+    color: $color-grey;
+    font-size: 15 px;
+}
+
+.btn-group {
+    text-transform: uppercase;
+    float: left;
+    border: 1px $color-grey-lightest;
+    border-radius: 12px;
 }
