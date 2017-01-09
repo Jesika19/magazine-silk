@@ -22,10 +22,11 @@ mixin box-article-main(options)
           a(href='#')
             img.img-responsive(src='/' width='#' height='#' alt='Alternative text')
 
-            .article-body
-              h1
-                a(href='#')= heading
-              p= description
+        .article-body-heading
+          h1.a(href='#')= heading
+
+        .article-body-description
+          p= description
 
         .article-footer
           ul
@@ -46,9 +47,10 @@ mixin box-article-main(options)
             img.img-responsive(src='#', alt='Alternative text', width='#', height='#')
 
 
-        .article-body
-          h1
-            a(href='#')= heading
+        .article-body-heading
+          h1.a(href='#')= heading
+
+        .article-body-description
           p= description
 
         .article-footer

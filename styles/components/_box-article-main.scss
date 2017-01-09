@@ -1,0 +1,38 @@
+@import './base/_colors.scss';
+@import './base/_fonts.scss';
+//Variables
+.box {
+    background-color: $color-white;
+    width: 370px;
+    height: ;
+}
+
+.article-badge {
+    font-size: 12 px;
+    font-family: $font-main;
+    color: $color-yellow;
+    width: 32px;
+    height: 103px;
+}
+
+.article-img {
+    position: relative;
+}
+
+.article-body-heading {
+    text-transform: capitalize;
+    font-size: 32 px;
+    font-family: $font-title;
+    color: $color-yellow;
+    width: 32px;
+    height: 103px;
+}
+
+.article-body-description {
+    text-transform: capitalize;
+    font-size: 32 px;
+    font-family: $font-secondary;
+    color: $color-black;
+    width: 32px;
+    height: 103px;
+}
