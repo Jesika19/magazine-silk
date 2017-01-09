@@ -1,10 +1,9 @@
 @import './layout/avalanche.scss';
 //Icons
-
 // Base
 @import './base/colors.scss';
 @import './base/fonts.scss';
-@import './base/generic.scss';
+@import './base/_generic.scss';
 // Components
 @import './components/nav.scss';
 @import './components/footer.scss';
