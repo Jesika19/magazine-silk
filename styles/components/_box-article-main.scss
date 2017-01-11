@@ -1,6 +1,5 @@
 @import './base/_colors.scss';
 @import './base/_fonts.scss';
-//Variables
 .box {
     background-color: $color-white;
     width: 370 px;
@@ -23,7 +22,7 @@
     text-transform: capitalize;
     font-size: 32 px;
     font-family: $font-title;
-    color: $color-yellow;
+    color: $color-black;
     width: 32 px;
     height: 103 px;
 }
@@ -32,15 +31,9 @@
     text-transform: capitalize;
     font-size: 32 px;
     font-family: $font-secondary;
-    color: $color-black;
+    color: $color-grey;
     width: 32 px;
     height: 103 px;
-}
-
-.article-footer-cars {
-    font-family: $font-main;
-    color: $color-grey;
-    font-size: 15 px;
 }
 
 .article-footer-cars {
@@ -50,7 +43,7 @@
 }
 
 .btn-group {
-    text-transform: uppercase;
+    text-transform: capitalize;
     float: left;
     border: 1px $color-grey-lightest;
     border-radius: 12px;
